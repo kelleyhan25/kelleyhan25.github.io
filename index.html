@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kelley Han</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="container">
+            
+            <h1>Hi! I'm Kelley Han.</h1>
+             <h2>B.A. Math and Computer Science</h2>
+             <img src="kelley.jpeg"/>
+            <h3>Boston University, College of Arts and Sciences</h3>
+            <p>System.out.println("Hello! Welcome!");</p>
+            <img src="menu.webp" class="menu-icon" onclick="openmenu()">
+            <div class="menu-box" id="menu">
+                <div class="right-links">
+                    
+                    <img src="closed.png" onclick="closemenu()">
+                </div>
+                <div class="menu-links">
+                    <a href="index.html"> Home</a>
+                    <a href="page2.html"> Academics</a>
+                    <a href="page3.html"> Resume/CV</a>
+                    <a href="game.html"> Play</a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div>
+            <form action="#">
+                <label for="email">
+                    Email: <input type="email" id="email" placeholder="Enter your email"/>
+                </label>
+                <label for="message">
+                    Message: <textarea id="message">Your Message</textarea>
+                </label>
+                <input type="submit" valid="Send Message" />
+            </form>
+        </div>
+        <script>
+            var menu = document.getElementById("menu");
+            function closemenu(){
+                menu.style.top = "-100vh";
+            }
+            function openmenu(){
+                menu.style.top = "17%";
+            }
+        </script>
+    </body>
+   
+</html>
