@@ -16,8 +16,8 @@ function setGame() {
 
     }
 
-    setInterval(setMole, 950);
-    setInterval(setCoco, 1500);
+    setInterval(setMole, 600);
+    setInterval(setCoco, 800);
 }
 
 function getRandomTile() {

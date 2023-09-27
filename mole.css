@@ -8,7 +8,7 @@ body {
 #board {
     width: 540px;
     height: 540px;
-    background-color: green;
+    background-color: honeydew;
     background-size: cover;
     border: 3px solid white;
     border-radius: 25px;
@@ -21,13 +21,25 @@ body {
 
 
 #board div {
-    width: 165px; 
+    width: 180px; 
     height: 180px; 
-    background-image: url("./Hole-PNG-Clipart.png");
+    background-image: url("./open.png");
     background-size: cover;
 }
 
 #board div img {
     width: 105px; 
     height: 105px; 
+}
+
+#exitButton {
+    background-color: crimson;
+    color:aliceblue;
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer;
+}
+
+#exitButton:hover {
+    background-color: firebrick;
 }
