@@ -124,7 +124,14 @@ h4 {
     font-size: medium;
 }
 
-
-.about-pics {
-    height: 3hv; 
+.time {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-weight:bold; 
+    float: right;
+    position: absolute; 
+    top: 50px; 
+    right: 15px;  
+    font-size: 45px;
 }
+
