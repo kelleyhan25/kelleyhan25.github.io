@@ -1,0 +1,130 @@
+.container{
+    text-align: center;
+    width: 100;
+    height: 100vh;
+    background-color:aliceblue;
+    position: relative; 
+    overflow: hidden; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 50px; 
+    padding: 0;
+    overflow: hidden;
+    background-color: aliceblue;
+    font-size: x-large;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block; 
+    color: black;
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #bfbdee;
+}
+
+.header{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.intro-text {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; 
+    margin-left: 80px; 
+}
+
+.image {
+   height: 150px; 
+   float: right; 
+}
+
+.flashcards-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.flashcard {
+    width: 300px;
+    height: 200px;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.front {
+    background-color: #b6cff0;
+    transform: rotateY(0deg);
+}
+
+.back {
+    background-color: #b6cff0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px; 
+    transform: rotateY(180deg) translateY(-100%);
+}
+
+.flashcard:hover .front {
+    transform: rotateY(180deg);
+}
+
+.flashcard:hover .back {
+    transform: rotateY(0deg) translateY(0);
+}
+
+.grid {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+body {
+    background-color: aliceblue;
+}
+
+h3 {
+    text-align: center;
+    font-size: xx-large;
+}
+h4 {
+    text-align: center;
+    font-size: medium;
+}
+
+
+.about-pics {
+    height: 3hv; 
+}
